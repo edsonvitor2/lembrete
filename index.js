@@ -1,5 +1,4 @@
-// Defina uma função assíncrona para encapsular o código
-async function sendMessage() {
+  async function sendMessage() {
     const GZAPPY_URL = "https://api.gzappy.com/v1/message/send-message";
 
     try {
@@ -12,7 +11,7 @@ async function sendMessage() {
             body: JSON.stringify({
                 instance_id: 'GMJ60NC61FTBT7HBI1RSV80B',
                 instance_token: '6bbb28e0-599c-451e-82ad-dba1b98b5f12',
-                message: ["Olá, tudo bem?", "Você tem um novo agendamento marcado, Sr Cliente"],
+                message: ["Olá, tudo bem?", `Hoje é animersario de ${nome}`],
                 phone: ["+5562995729379"]
             })
         });
@@ -25,6 +24,3 @@ async function sendMessage() {
         console.error('Erro ao enviar mensagem:', error);
     }
 }
-
-// Chame a função assíncrona para iniciar o envio da mensagem
-sendMessage();

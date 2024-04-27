@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Aplicação Electron</title>
+</head>
+<body>
+    <h1>Formulário de Aniversariantes</h1>
+
+    <!-- Formulário para inserir nome e data de nascimento -->
+    <form id="meuFormulario" onsubmit="handleSubmit(event)">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+        <button type="submit">Salvar</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
